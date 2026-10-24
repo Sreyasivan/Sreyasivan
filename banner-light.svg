@@ -3,6 +3,6 @@
   <rect x="0" y="0" width="8" height="260" fill="#2563eb"/>
   <text x="56" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#4b5563">$ whoami</text>
   <text x="56" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#111827">Sreya Sivan</text>
-  <text x="56" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#4b5563">Data science and AI developer. Full-stack (MERN) apps and practical Generative AI.</text>
-  <text x="56" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#2563eb">python · sql · duckdb · postgresql · openai · rag · react · node.js · mongodb</text>
+  <text x="56" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#4b5563">AI engineer. Retrieval, extraction and evaluation on real data.</text>
+  <text x="56" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#2563eb">python · postgresql · pgvector · rag · pydantic · fastapi · pytest · react · node.js</text>
 </svg>
