@@ -6,7 +6,7 @@
 <style>
   @page { size: A4; margin: 12mm 14mm; }
   * { box-sizing: border-box; }
-  body { font-family: 'Times New Roman', Times, serif; font-size: 10.3pt; line-height: 1.27; color: #111; margin: 0; }
+  body { font-family: 'Times New Roman', Times, serif; font-size: 10.1pt; line-height: 1.25; color: #111; margin: 0; }
   h1 { text-align: center; font-size: 22pt; letter-spacing: 1.5px; margin: 0 0 4px; }
   .contact { text-align: center; font-size: 9.6pt; color: #333; }
   .contact span + span::before { content: "|"; margin: 0 6px; color: #888; }
@@ -43,13 +43,14 @@
     <li>Typed extraction of contraindications, interactions and warnings into pydantic models, scored against the label text: 221 items from 44 labels, 100% grounded (no item uses words absent from the label).</li>
     <li>Evaluation in CI on every push: each question is verified against the indexed label text, pgvector is stood up, the eval drugs ingested, and the build fails below a recall floor; 39 unit tests. Local 3B model by default so label text never leaves the machine; OpenAI or Claude via environment variables.</li>
   </ul>
+  <div class="row"><div><b>FAERS Serious-Outcome Classifier</b> <span class="stack">· Python, pandas, scikit-learn, matplotlib, pytest, GitHub Actions</span></div><div class="meta">2026 | github.com/Sreyasivan/faers-serious-outcome</div></div>
+  <ul>
+    <li>Predicts death, life-threatening event or hospitalisation on 397,224 real FDA adverse-event reports (one FAERS quarter): logistic-regression baseline AUROC 0.83 vs gradient boosting 0.87 (AUPRC 0.72), both calibrated across ten probability bins; permutation importance and a model card with intended use and failure modes.</li>
+    <li>Found two label leaks by EDA (outcome-naming reaction terms; expedited-vs-periodic report type at 48% vs 3% serious) and removed them, reporting the lower score.</li>
+  </ul>
   <div class="row"><div><b>Financial Analytics &amp; Expense Tracker</b> <span class="stack">· MongoDB, Express.js, React.js, Node.js, Chart.js</span></div><div class="meta"></div></div>
   <ul>
     <li>Analytics dashboard with spending charts, JWT authentication and a MongoDB schema designed for the reports.</li>
-  </ul>
-  <div class="row"><div><b>Notes App</b> <span class="stack">· MongoDB, Express.js, React.js, Node.js</span></div><div class="meta"></div></div>
-  <ul>
-    <li>Responsive notes app with create, edit and delete; JWT-based authentication and encrypted storage so each user sees only their own notes.</li>
   </ul>
 
   <h2>Experience</h2>

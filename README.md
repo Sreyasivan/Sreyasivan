@@ -19,6 +19,12 @@ Building **[LabelLens](https://github.com/Sreyasivan/labellens)**: cited questio
 
 The README has the numbers, what they do and do not prove, and the design decisions.
 
+Also **[FAERS serious-outcome classifier](https://github.com/Sreyasivan/faers-serious-outcome)**: on
+397,224 real FDA adverse-event reports from one quarter, predict death, life-threatening event or
+hospitalisation. Logistic-regression baseline (AUROC 0.83) against gradient boosting (0.87), both
+calibrated; two leaks found by EDA and removed, with the inflated score they would have given quoted
+in the model card.
+
 ## Before that
 
 **AI intern at [Prayag.ai](https://prayag.ai)**, Jun 2025 to Apr 2026. Built a business development agent in Python, automated data extraction from client emails with the GPT-4 API, and designed RAG chatbot architectures. That code is the company's, so it is not here.
@@ -28,6 +34,7 @@ The README has the numbers, what they do and do not prove, and the design decisi
 ## Projects
 
 - **[LabelLens](https://github.com/Sreyasivan/labellens)**: RAG, structured extraction and evals on FDA drug labels. Python, Postgres, pgvector, sentence-transformers, pydantic, FastAPI, pytest, GitHub Actions.
+- **[FAERS serious-outcome classifier](https://github.com/Sreyasivan/faers-serious-outcome)**: tabular ML on real adverse-event reports with a model card. Python, pandas, scikit-learn, matplotlib, pytest.
 - **[Financial Analytics & Expense Tracker](https://sreyasivan.me/projects/financial-analytics-expense-tracker)**: MERN dashboard with Chart.js spending charts, JWT sign-in and a MongoDB data model.
 - **[Notes App](https://sreyasivan.me/projects/notes-app-mern)**: MERN notes with JWT authentication and encrypted storage, so each user sees only their own notes.
 
