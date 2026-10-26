@@ -38,10 +38,10 @@
   <h2>Projects</h2>
   <div class="row"><div><b>LabelLens</b> <span class="stack">· Python, PostgreSQL, pgvector, sentence-transformers, pydantic, FastAPI, Ollama, pytest, GitHub Actions, Docker</span></div><div class="meta">2026 | github.com/Sreyasivan/labellens</div></div>
   <ul>
-    <li>Cited question answering over 2,000 FDA prescription labels (openFDA), chunked by label section; hybrid retrieval (bge-small vectors + Postgres full-text, reciprocal rank fusion, one chunk per drug and section). Recall@5 57/58 on a hand-written question set, up from 49/58 with naive vector search.</li>
-    <li>Guardrails before the model: a measured distance threshold refuses all 8 off-topic questions without a model call; closed-book prompt with numbered sources; not-medical-advice footer added in code.</li>
-    <li>Typed extraction of contraindications, interactions and warnings into pydantic models, scored against the label text: 221 items from 44 labels, 100% grounded (no item uses words absent from the label).</li>
-    <li>Evaluation in CI on every push: each question is verified against the indexed label text, pgvector is stood up, the eval drugs ingested, and the build fails below a recall floor; 39 unit tests. Local 3B model by default so label text never leaves the machine; OpenAI or Claude via environment variables.</li>
+    <li>Cited question answering over 2,000 FDA prescription labels (openFDA), chunked by section; hybrid retrieval (bge-small vectors + Postgres full-text, reciprocal rank fusion, named-drug ranking). Recall@5 97/100 on a hand-written, label-verified question set, up from 70/100 with naive vector search.</li>
+    <li>Guardrails before the model: distance threshold plus named-drug check refuse all 16 off-topic questions without a model call; closed-book prompt with numbered sources. Judged faithfulness metric whose judge is scored against hand-labelled pairs before its number is reported.</li>
+    <li>Typed extraction of contraindications, interactions and warnings into pydantic models, scored against the label text: 221 items from 44 labels, 100% grounded.</li>
+    <li>Evaluation in CI on every push: questions verified against the indexed label text, pgvector stood up, eval drugs ingested, build fails below a recall floor; 46 unit tests. Local 3B model by default; OpenAI or Claude via environment variables.</li>
   </ul>
   <div class="row"><div><b>FAERS Serious-Outcome Classifier</b> <span class="stack">· Python, pandas, scikit-learn, matplotlib, pytest, GitHub Actions</span></div><div class="meta">2026 | github.com/Sreyasivan/faers-serious-outcome</div></div>
   <ul>

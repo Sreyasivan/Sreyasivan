@@ -12,8 +12,9 @@ Studying **Data Science with AI at DataMites** full time since June 2026: Python
 Building **[LabelLens](https://github.com/Sreyasivan/labellens)**: cited question answering and typed extraction over FDA drug labels, with an evaluation harness that runs on every push.
 
 - 2,000 prescription labels from openFDA in Postgres with pgvector and full-text search, hybrid retrieval fused with reciprocal rank fusion.
-- A 58-question set, every question verified against the label text before it counts. Retrieval recall@5 57/58; all 8 off-topic questions refused before the model is called.
+- A 100-question set, every question verified against the label text before it counts. Retrieval recall@5 97/100; all 16 off-topic questions refused before the model is called.
 - Extraction of contraindications, interactions and warnings into typed lists: 221 items, none containing words that are not in the label.
+- A judged faithfulness metric whose judge is itself scored against hand-labelled pairs, so its number comes with its own accuracy.
 - A local 3B model by default so label text never leaves the machine; OpenAI or Claude by changing environment variables.
 - CLI, FastAPI service with generated docs, a plain web page, and CI that fails if recall drops.
 
