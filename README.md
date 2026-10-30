@@ -30,14 +30,12 @@ in the model card.
 
 **AI intern at [Prayag.ai](https://prayag.ai)**, Jun 2025 to Apr 2026. Built a business development agent in Python, automated data extraction from client emails with the GPT-4 API, and designed RAG chatbot architectures. That code is the company's, so it is not here.
 
-**B.Tech in Information Technology**, Karpagam Institute of Technology, 2022 to 2026 (CGPA 7.83).
+**B.Tech in Information Technology**, Karpagam Institute of Technology, 2022 to 2026 (CGPA 8.00).
 
 ## Projects
 
 - **[LabelLens](https://github.com/Sreyasivan/labellens)**: RAG, structured extraction and evals on FDA drug labels. Python, Postgres, pgvector, sentence-transformers, pydantic, FastAPI, pytest, GitHub Actions.
 - **[FAERS serious-outcome classifier](https://github.com/Sreyasivan/faers-serious-outcome)**: tabular ML on real adverse-event reports with a model card. Python, pandas, scikit-learn, matplotlib, pytest.
-- **[Financial Analytics & Expense Tracker](https://sreyasivan.me/projects/financial-analytics-expense-tracker)**: MERN dashboard with Chart.js spending charts, JWT sign-in and a MongoDB data model.
-- **[Notes App](https://sreyasivan.me/projects/notes-app-mern)**: MERN notes with JWT authentication and encrypted storage, so each user sees only their own notes.
 
 ## Open to
 
